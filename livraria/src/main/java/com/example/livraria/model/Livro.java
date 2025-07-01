@@ -1,7 +1,7 @@
 package com.example.livraria.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.Data; // Gera automaticamente todos os métodos "boilerplate" (Getters, Setters, etc.)
 
 @Data
 @Entity // Indica que essa classe é uma entidade JPA, ou seja, será mapeada para uma tabela no banco de dados
@@ -14,6 +14,5 @@ public class Livro {
     private String titulo;
     private String autor;
     private int ano;
-
 
 }
